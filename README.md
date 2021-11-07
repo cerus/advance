@@ -50,7 +50,7 @@ Latest version: `1.0.0`
         <!-- Only implement this if you need 1.16.5 support -->
         <dependency>
             <groupId>dev.cerus.advance</groupId>
-            <artifactId>api-v16R3</artifactId>
+            <artifactId>api-16R3</artifactId>
             <version>${advance.version}</version>
             <scope>compile</scope>
         </dependency>
@@ -59,7 +59,7 @@ Latest version: `1.0.0`
         <!-- Only implement this if you need 1.17(.1) support -->
         <dependency>
             <groupId>dev.cerus.advance</groupId>
-            <artifactId>api-v17R1</artifactId>
+            <artifactId>api-17R1</artifactId>
             <version>${advance.version}</version>
             <scope>compile</scope>
         </dependency>
