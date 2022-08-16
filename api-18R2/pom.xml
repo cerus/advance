@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>util</artifactId>
+    <artifactId>api-18R2</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -25,39 +25,22 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>dev.cerus.advance</groupId>
             <artifactId>api</artifactId>
             <version>${version}</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
-            <groupId>dev.cerus.advance</groupId>
-            <artifactId>api-16R3</artifactId>
-            <version>${version}</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.18.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>dev.cerus.advance</groupId>
-            <artifactId>api-17R1</artifactId>
-            <version>${version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>dev.cerus.advance</groupId>
-            <artifactId>api-18R2</artifactId>
-            <version>${version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>dev.cerus.advance</groupId>
-            <artifactId>api-19R1</artifactId>
-            <version>${version}</version>
+            <groupId>org.bukkit</groupId>
+            <artifactId>craftbukkit</artifactId>
+            <version>1.18.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

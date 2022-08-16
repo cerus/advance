@@ -24,7 +24,7 @@ advance is compatible with 1.16.5, 1.17 and 1.17.1.
 
 ## Installation
 
-Latest version: `1.0.0`
+Latest version: `1.1.0`
 
 <details>
 <summary>Maven</summary>
@@ -34,7 +34,7 @@ Latest version: `1.0.0`
 <project>
     <properties>
         <!-- Replace with latest version -->
-        <advance.version>1.0.0</advance.version>
+        <advance.version>1.1.0</advance.version>
     </properties>
 
     <dependencies>
