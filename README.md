@@ -20,7 +20,7 @@ advance is **not**...
 
 ## Compatibility
 
-advance is compatible with 1.16.5, 1.17 and 1.17.1.
+advance is compatible with 1.16.5, 1.17, 1.17.1, 1.18.2, 1.19, 1.19.1 and 1.19.2.
 
 ## Installation
 
@@ -33,7 +33,7 @@ Latest version: `1.1.0`
 
 <project>
     <properties>
-        <!-- Replace with latest version -->
+        <!-- Replace with the latest version -->
         <advance.version>1.1.0</advance.version>
     </properties>
 
@@ -63,6 +63,8 @@ Latest version: `1.1.0`
             <version>${advance.version}</version>
             <scope>compile</scope>
         </dependency>
+
+        <!-- ...other versions... -->
 
         <!-- Optional: Utilities for advance -->
         <dependency>
