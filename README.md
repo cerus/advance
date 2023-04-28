@@ -20,11 +20,11 @@ advance is **not**...
 
 ## Compatibility
 
-advance is compatible with 1.16.5, 1.17, 1.17.1, 1.18.2, 1.19, 1.19.1 and 1.19.2.
+advance is compatible with 1.16.5, 1.17 - 1.17.1, 1.18.2, and 1.19 - 1.19.4.
 
 ## Installation
 
-Latest version: `1.1.0`
+Latest version: `1.2.0`
 
 <details>
 <summary>Maven</summary>
@@ -34,7 +34,7 @@ Latest version: `1.1.0`
 <project>
     <properties>
         <!-- Replace with the latest version -->
-        <advance.version>1.1.0</advance.version>
+        <advance.version>1.2.0</advance.version>
     </properties>
 
     <dependencies>
@@ -66,6 +66,15 @@ Latest version: `1.1.0`
 
         <!-- ...other versions... -->
 
+        <!-- You can also add the "all-versions" module to shade all advance versions -->
+        <dependency>
+            <groupId>dev.cerus.advance</groupId>
+            <artifactId>all-versions</artifactId>
+            <version>${advance.version}</version>
+            <type>pom</type> <!-- This is very important -->
+            <scope>compile</scope>
+        </dependency>
+
         <!-- Optional: Utilities for advance -->
         <dependency>
             <groupId>dev.cerus.advance</groupId>
@@ -74,6 +83,34 @@ Latest version: `1.1.0`
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <!-- Shade advance into your jar -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <relocations>
+                                <relocation>
+                                    <pattern>dev.cerus.advance</pattern>
+                                    <!-- Replace YOUR_PACKAGE with the package name you're using -->
+                                    <shadedPattern>YOUR_PACKAGE.thirdparty.advance</shadedPattern>
+                                </relocation>
+                            </relocations>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 ```
 
