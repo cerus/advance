@@ -20,11 +20,11 @@ advance is **not**...
 
 ## Compatibility
 
-advance is compatible with 1.16.5, 1.17 - 1.17.1, 1.18.2, and 1.19 - 1.19.4.
+advance is compatible with 1.16.5, 1.17 - 1.17.1, 1.18.2, 1.19 - 1.19.4 and 1.20.
 
 ## Installation
 
-Latest version: `1.2.0`
+Latest version: `1.3.0`
 
 <details>
 <summary>Maven</summary>
@@ -34,7 +34,7 @@ Latest version: `1.2.0`
 <project>
     <properties>
         <!-- Replace with the latest version -->
-        <advance.version>1.2.0</advance.version>
+        <advance.version>1.3.0</advance.version>
     </properties>
 
     <dependencies>

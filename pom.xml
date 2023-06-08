@@ -8,7 +8,7 @@
     <groupId>dev.cerus.advance</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <modules>
         <module>api</module>
         <module>api-16R3</module>
@@ -20,6 +20,7 @@
         <module>api-19R2</module>
         <module>api-19R3</module>
         <module>all-versions</module>
+        <module>api-20R1</module>
     </modules>
 
     <properties>
