@@ -21,6 +21,8 @@ public class ApiFactory {
             case "1.20":
             case "1.20.1":
                 return new dev.cerus.advance.api.v20r1.AdvanceApiImpl();
+            case "1.20.2":
+                return new dev.cerus.advance.api.v20r2.AdvanceApiImpl();
             case "1.18.2":
                 return new dev.cerus.advance.api.v18r2.AdvanceApiImpl();
             case "1.17":

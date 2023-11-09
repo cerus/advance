@@ -8,19 +8,20 @@
     <groupId>dev.cerus.advance</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.3.1</version>
+    <version>1.3.2</version>
     <modules>
         <module>api</module>
         <module>api-16R3</module>
         <module>api-17R1</module>
         <module>api-18R2</module>
         <module>api-19R1</module>
-        <module>util</module>
-        <module>test-plugin</module>
         <module>api-19R2</module>
         <module>api-19R3</module>
-        <module>all-versions</module>
         <module>api-20R1</module>
+        <module>api-20R2</module>
+        <module>util</module>
+        <module>test-plugin</module>
+        <module>all-versions</module>
     </modules>
 
     <properties>
